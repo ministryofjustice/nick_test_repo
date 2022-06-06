@@ -7,7 +7,7 @@ metadata:
     cloud-platform.justice.gov.uk/environment-name: "development"
   annotations:
     cloud-platform.justice.gov.uk/business-unit: "HMPPS"
-    cloud-platform.justice.gov.uk/slack-channel: "prison-visit-booking"
+    cloud-platform.justice.gov.uk/slack-channel: "prison-visit-booking" 
     cloud-platform.justice.gov.uk/application: "Gov.UK Prototype Kit"
     cloud-platform.justice.gov.uk/owner: "Prison Visits Booking: platforms@digital.justice.gov.uk"
     cloud-platform.justice.gov.uk/source-code: "https://github.com/ministryofjustice/book-a-prison-visit-prototype"
