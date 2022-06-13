@@ -1,6 +1,6 @@
 on:
-  pull_request:
-    types: [opened, edited, reopened, synchronize]
+  # pull_request:
+  #   types: [opened, edited, reopened, synchronize]
 
 jobs:
   reject-malformed-yaml:
