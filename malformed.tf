@@ -1,0 +1,3 @@
+module "test" {
+  repository = "acronyms"           
+}
