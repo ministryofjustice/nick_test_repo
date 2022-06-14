@@ -1,3 +1,0 @@
-name: malform yaml code
-on:
-  workflow_dispatch:
