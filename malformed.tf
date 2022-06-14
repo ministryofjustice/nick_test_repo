@@ -1,3 +1,3 @@
 module "test" {
-  repository = "acronyms"           
+  repository = "acronyms"
 }
