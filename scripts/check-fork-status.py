@@ -32,11 +32,11 @@ comment_message = """
 def run():
     print(type(pr_json_data))
     print(pr_json_data)
-    if pr_json_data["head"]["repo"]["fork"] is not None:
-        pr_is_fork = pr_json_data["head"]["repo"]["fork"]
-        if pr_is_fork:
-            print(pr_json_data["head"]["repo"]["name"])
-            print(pr_json_data["number"])
+#     if pr_json_data["head"]["repo"]["fork"] is not None:
+#         pr_is_fork = pr_json_data["head"]["repo"]["fork"]
+#         if pr_is_fork:
+#             print(pr_json_data["head"]["repo"]["name"])
+#             print(pr_json_data["number"])
 
 
 print("Start")
