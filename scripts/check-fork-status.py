@@ -1,5 +1,6 @@
 # It is VERY important that the repo setting Actions > General > Fork pull request workflows from outside collaborators is set
 # to "Require approval for first-time contributors"
+import json
 import os
 import sys
 import time
