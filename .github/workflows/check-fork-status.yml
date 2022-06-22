@@ -13,5 +13,5 @@ jobs:
       - run: python3 -m pip install -r scripts/requirements.txt
       - run: python3 scripts/check-fork-status.py
         env:
-          PR_DATA: ${{ github.event.pull_request }}
+          PR_DATA: ${{ toJson(github.event.pull_request) }}
           TOKEN: "dkfjvndfkjnfdkjnefkjnefk"
