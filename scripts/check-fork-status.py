@@ -31,7 +31,7 @@ def run():
     if pr_json_data is None or oauth_token is None:
         print("Script input parameter is None")
         sys.exit()
-    else:
+#     else:
 #     if pr_json_data["head"]["repo"]["fork"] is not None:
 #         pr_is_fork = pr_json_data["head"]["repo"]["fork"]
 #         if pr_is_fork:
