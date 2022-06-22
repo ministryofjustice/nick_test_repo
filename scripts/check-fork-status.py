@@ -5,13 +5,6 @@ import sys
 import time
 from github import Github
 
-pr_json_data = os.getenv("PR_DATA")
-oauth_token = os.getenv("TOKEN")
-
-if pr_json_data is None or oauth_token is None:
-    print("Script input parameter is None")
-    sys.exit()
-
 comment_message = """
   Hi there
 
@@ -30,8 +23,15 @@ comment_message = """
 
 
 def run():
+    oauth_token = os.getenv("TOKEN")
+    pr_json_data = json.loads(os.getenv("PR_DATA"))
     print(type(pr_json_data))
     print(pr_json_data)
+
+    if pr_json_data is None or oauth_token is None:
+        print("Script input parameter is None")
+        sys.exit()
+    else:
 #     if pr_json_data["head"]["repo"]["fork"] is not None:
 #         pr_is_fork = pr_json_data["head"]["repo"]["fork"]
 #         if pr_is_fork:
