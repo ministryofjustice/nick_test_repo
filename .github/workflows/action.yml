@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install -g prettier --location=global && npx prettier --print-width=150 --write README.md
+      - run: npm install --location=global prettier && npx prettier --print-width=150 --write README.md
