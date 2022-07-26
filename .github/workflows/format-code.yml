@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ministryofjustice/github-actions/code-formatter@NickWalt01-patch-1
+      - uses: ministryofjustice/github-actions/code-formatter@ignoreFiles
         with:
           ignore-files: "pre-pr-malformed.json,pre-pr-malformed.rb,pre-pr-malformed.yaml"
         env:
