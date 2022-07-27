@@ -1,4 +1,4 @@
-name: malform yml code      
+name: malform yml code        
   on:
   workflow_dispatch:
 
