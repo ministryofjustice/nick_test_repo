@@ -31,13 +31,21 @@ jobs:
         run: |
           /publishing-scripts/compile.sh
           ls docs
-          tar help
+          tar \
+            --dereference --hard-dereference \
+            --directory docs\
+            -cvf artifact.tar \
+            --exclude=.git \
+            --exclude=.github \
+            .
+      - name: Upload artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: github-pages
+          path: artifact.tar
+          retention-days: 1
       - name: Setup Pages
         uses: actions/configure-pages@v1
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: './docs'
 
   deploy:
     needs: build
