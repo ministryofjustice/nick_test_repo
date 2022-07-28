@@ -1,16 +1,16 @@
 # See the available options: https://tdt-documentation.london.cloudapps.digital/configure_project/global_configuration/#configure-your-documentation-site
 
 # Host to use for canonical URL generation (without trailing slash)
-host: https://ministryofjustice.github.io/operations-engineering
+host: https://ministryofjustice.github.io/nick_test_repo/
 
 # Header-related options
 show_govuk_logo: true
-service_name: MoJ Operations Engineering
-service_link: /#moj-operations-engineering
+service_name: MoJ Nick Repo
+service_link: /#moj-nick-repo
 
 # Links to show on right-hand-side of header
 header_links:
-  GitHub: https://github.com/ministryofjustice/operations-engineering
+  GitHub: https://github.com/ministryofjustice/nick_test_repo/
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
@@ -33,5 +33,5 @@ max_toc_heading_level: 3
 prevent_indexing: true
 
 show_contribution_banner: true
-github_repo: ministryofjustice/operations-engineering
+github_repo: ministryofjustice/nick_test_repo/
 github_branch: main
