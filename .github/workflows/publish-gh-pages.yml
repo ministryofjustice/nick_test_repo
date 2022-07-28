@@ -32,8 +32,8 @@ jobs:
           /publishing-scripts/compile.sh
           ls docs
           tar \
-            --dereference --hard-dereference \
-            --directory docs\
+            --dereference \
+            --directory docs \
             -cvf artifact.tar \
             --exclude=.git \
             --exclude=.github \
