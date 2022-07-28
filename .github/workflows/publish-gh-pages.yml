@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
   
 jobs:
-  publish-gh-pages:
+  build:
     runs-on: ubuntu-latest
     container:
       image: ministryofjustice/tech-docs-github-pages-publisher:test-gh-pages
@@ -30,13 +30,21 @@ jobs:
       - name: Run a multi-line script
         run: |
           /publishing-scripts/compile.sh
+          ls docs
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
-          path: 'docs'
+          path: './docs'
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
