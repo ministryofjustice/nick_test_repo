@@ -3,7 +3,7 @@ module "bankline-direct-parser" {
   repository = "bankline-direct-parser"
   collaborators = [
     {
-      github_user  = "i33brechin"
+      github_user  = "i3brechin"
       permission   = "push"
       name         = "Ian Brechin"
       email        = "ian.brechin@gmail.com"
